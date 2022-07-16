@@ -141,6 +141,7 @@
     <Content Include="Login.aspx" />
     <Content Include="PassengerDetailsInfo.aspx" />
     <Content Include="SeatDetails.aspx" />
+    <Content Include="UserBooking.aspx" />
     <Content Include="UserRegistration.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -280,6 +281,10 @@
     </Compile>
     <Compile Include="SeatDetails.aspx.designer.cs">
       <DependentUpon>SeatDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserBooking.aspx.cs">
+      <DependentUpon>UserBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserRegistration.aspx.cs">
       <DependentUpon>UserRegistration.aspx</DependentUpon>
