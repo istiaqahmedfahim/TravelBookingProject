@@ -3,9 +3,9 @@
      <style type="text/css">
         body {
             /* Safari 4-5, Chrome 1-9 */
-            background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
+            background: -webkit-gradient(radial, center center, 0, center center, 460, from(#789ad6), to(#3c4d6b));
             /* Safari 5.1+, Chrome 10+ */
-            background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+            background: -webkit-radial-gradient(circle, #789ad6, #3c4d6b);
             /* Firefox 3.6+ */
             background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
             /* IE 10 */

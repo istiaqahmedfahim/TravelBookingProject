@@ -42,7 +42,7 @@ namespace BusBookingProject
         protected global::System.Web.UI.WebControls.Label lblFirstName;
 
         /// <summary>
-        /// FirstName control.
+        /// txtFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.

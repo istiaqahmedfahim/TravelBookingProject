@@ -1,9 +1,34 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BusBookingMaster.Master" AutoEventWireup="true" CodeBehind="UserBooking.aspx.cs" Inherits="BusBookingProject.UserBooking" %>
 
-
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <style type="text/css">
+        body {
+            /* Safari 4-5, Chrome 1-9 */
+            background: -webkit-gradient(radial, center center, 0, center center, 460, from(#789ad6), to(#3c4d6b));
+            /* Safari 5.1+, Chrome 10+ */
+            background: -webkit-radial-gradient(circle, #789ad6, #3c4d6b);
+            /* Firefox 3.6+ */
+            background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
+            /* IE 10 */
+            background: -ms-radial-gradient(circle, #1a82f7, #2F2727);
+            height: 600px;
+        }
+
+        .centered-form {
+            margin-top: 10%;
+        }
+
+            .centered-form .panel {
+                background: rgba(255, 255, 255, 0.8);
+                box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+            }
+
+        label.label-floatlabel {
+            font-weight: bold;
+            color: #46b8da;
+            font-size: 11px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div class="container" style="margin-top: 5%">

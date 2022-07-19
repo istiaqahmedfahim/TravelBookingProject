@@ -19,7 +19,7 @@ namespace BusBookingProject.Admin
             if(txtUserId.Text=="admin" && txtPassword.Text=="admin")
             {
                 Session["UserName"] = "Admin";
-                Response.Redirect("CustomerDetailsReport.aspx");
+                Response.Redirect("CustomerDetails.aspx");
             }
             else
             {
