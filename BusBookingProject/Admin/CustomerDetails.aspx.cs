@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace BusBookingProject.Admin
 {
-    public partial class BusDetails : System.Web.UI.Page
+    public partial class CustomerDetails : System.Web.UI.Page
     {
         #region Global Variable
         SqlConnection connString = new SqlConnection(ConfigurationManager.ConnectionStrings["OnlineBusBookingConnectionString"].ToString());
@@ -86,7 +86,7 @@ namespace BusBookingProject.Admin
                 txtDetination.Text = Convert.ToString(dsGetData.Tables[0].Rows[0]["Destination"]);
             }
         }
-        private int AddBusDetails()
+        private int AddCustomerDetails()
         {
             int ResultCout = 0;
             SqlCommand sqlCmd = new SqlCommand();
@@ -111,7 +111,7 @@ namespace BusBookingProject.Admin
         {
            if(btnSave.Text=="Insert")
            {
-               int result = AddBusDetails();
+               int result = AddCustomerDetails();
                if (result == -1)
                {
                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Bus Details has been added successfully')", true);
@@ -133,7 +133,7 @@ namespace BusBookingProject.Admin
                int result = UpdateData();
                if (result == -1)
                {
-                   Response.Redirect("BusDetailsReport.aspx");
+                   Response.Redirect("CustomerDetailsReport.aspx");
                    //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Bus Details has been Updated successfully')", true);
                }
                else

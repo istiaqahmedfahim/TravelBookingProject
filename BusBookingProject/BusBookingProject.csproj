@@ -69,8 +69,8 @@
     <Content Include="Admin\AdminLogin.aspx" />
     <Content Include="Admin\BoardingDetails.aspx" />
     <Content Include="Admin\BookingReport.aspx" />
-    <Content Include="Admin\BusDetails.aspx" />
-    <Content Include="Admin\BusDetailsReport.aspx" />
+    <Content Include="Admin\CustomerDetails.aspx" />
+    <Content Include="Admin\CustomerDetailsReport.aspx" />
     <Content Include="Admin\BusScheduleDetails.aspx" />
     <Content Include="Admin\css\bootstrap.min.css" />
     <Content Include="Admin\css\style.css" />
@@ -183,19 +183,19 @@
     <Compile Include="Admin\BookingReport.aspx.designer.cs">
       <DependentUpon>BookingReport.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\BusDetails.aspx.cs">
-      <DependentUpon>BusDetails.aspx</DependentUpon>
+    <Compile Include="Admin\CustomerDetails.aspx.cs">
+      <DependentUpon>CustomerDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\BusDetails.aspx.designer.cs">
-      <DependentUpon>BusDetails.aspx</DependentUpon>
+    <Compile Include="Admin\CustomerDetails.aspx.designer.cs">
+      <DependentUpon>CustomerDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\BusDetailsReport.aspx.cs">
-      <DependentUpon>BusDetailsReport.aspx</DependentUpon>
+    <Compile Include="Admin\CustomerDetailsReport.aspx.cs">
+      <DependentUpon>CustomerDetailsReport.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\BusDetailsReport.aspx.designer.cs">
-      <DependentUpon>BusDetailsReport.aspx</DependentUpon>
+    <Compile Include="Admin\CustomerDetailsReport.aspx.designer.cs">
+      <DependentUpon>CustomerDetailsReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\BusScheduleDetails.aspx.cs">
       <DependentUpon>BusScheduleDetails.aspx</DependentUpon>
@@ -285,6 +285,9 @@
     <Compile Include="UserBooking.aspx.cs">
       <DependentUpon>UserBooking.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserBooking.aspx.designer.cs">
+      <DependentUpon>UserBooking.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserRegistration.aspx.cs">
       <DependentUpon>UserRegistration.aspx</DependentUpon>

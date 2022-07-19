@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace BusBookingProject.Admin
 {
-    public partial class BusDetailsReport : System.Web.UI.Page
+    public partial class CustomerDetailsReport : System.Web.UI.Page
     {
         #region Global Variable
         SqlConnection connString = new SqlConnection(ConfigurationManager.ConnectionStrings["OnlineBusBookingConnectionString"].ToString());
@@ -64,7 +64,7 @@ namespace BusBookingProject.Admin
                 HiddenField hdnBusID = (HiddenField)e.Row.FindControl("hdnPNRNo");
                 HyperLink hlinkSchedule = (HyperLink)e.Row.FindControl("hlinkAddSchedule");
                 HiddenField hdnRouteID = (HiddenField)e.Row.FindControl("hdnRouteID");
-                klnikUpdate.NavigateUrl = "BusDetails.aspx?BusID=" + hdnBusID.Value;
+                klnikUpdate.NavigateUrl = "CustomerDetails.aspx?BusID=" + hdnBusID.Value;
                 hlinkSchedule.NavigateUrl = "BusScheduleDetails.aspx?BusID=" + hdnBusID.Value + "&RouteID=" + hdnRouteID.Value;
             }
         }

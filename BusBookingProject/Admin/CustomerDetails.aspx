@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="BusDetails.aspx.cs" Inherits="BusBookingProject.Admin.BusDetails" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="CustomerDetails.aspx.cs" Inherits="BusBookingProject.Admin.CustomerDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -34,7 +34,7 @@
                         </div>
                           <div class="form-group">
                             <asp:Label ID="Label3" runat="server" Text="Transport Name" Font-Bold="true"></asp:Label>
-                            <asp:TextBox ID="txtBusName" runat="server" class="form-control input-sm floatlabel" OnTextChanged="txtBusName_TextChanged" />
+                            <asp:TextBox ID="txtBusName" runat="server" class="form-control input-sm floatlabel"/>
                              <asp:RequiredFieldValidator runat="server" ControlToValidate="txtBusName" Display="None" ID="RequiredFieldValidator3" ValidationGroup="vgRegister"
                                     CssClass="text-danger" ErrorMessage="Transport Name is Required" /><br />
                         </div>

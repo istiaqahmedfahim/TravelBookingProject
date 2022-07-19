@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BusBookingProject.Admin {
-    
-    
-    public partial class BusDetailsReport {
-        
+namespace BusBookingProject.Admin
+{
+
+
+    public partial class CustomerDetailsReport
+    {
+
         /// <summary>
         /// gdBusDetails control.
         /// </summary>

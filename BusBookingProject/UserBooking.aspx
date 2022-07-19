@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="UserBooking.aspx.cs" Inherits="BusBookingProject.UserBooking" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BusBookingMaster.Master" AutoEventWireup="true" CodeBehind="UserBooking.aspx.cs" Inherits="BusBookingProject.UserBooking" %>
 
 
 
@@ -51,8 +51,8 @@
                                  <asp:ListItem Value="1" Text="Solo"></asp:ListItem>
                                   <asp:ListItem Value="2" Text="Family"></asp:ListItem>
                              </asp:DropDownList>
-                            <asp:RequiredFieldValidator runat="server" ControlToValidate="txtTravletype" Display="None" ID="rfVLastName" ValidationGroup="vgRegister"
-                                    CssClass="text-danger" ErrorMessage="Travel type is required." /><br />
+                            <%--<asp:RequiredFieldValidator runat="server" ControlToValidate="txtTravletype" Display="None" ID="rfVLastName" ValidationGroup="vgRegister"
+                                    CssClass="text-danger" ErrorMessage="Travel type is required." /><br />--%>
                         </div>
                         
                         <div class="form-group">
@@ -69,8 +69,8 @@
                         </div>
                         <div class="form-group">
                             <asp:Label ID="Label2" runat="server" Text="Destination" Font-Bold="true"></asp:Label>
-                            <asp:TextBox ID="txtDetination" runat="server" class="form-control input-sm floatlabel" />
-                             <asp:RequiredFieldValidator runat="server" ControlToValidate="txtDetination" Display="None" ID="RequiredFieldValidator2" ValidationGroup="vgRegister"
+                            <asp:TextBox ID="txtDestination" runat="server" class="form-control input-sm floatlabel" />
+                             <asp:RequiredFieldValidator runat="server" ControlToValidate="txtDestination" Display="None" ID="RequiredFieldValidator2" ValidationGroup="vgRegister"
                                     CssClass="text-danger" ErrorMessage="Destination is Required" /><br />
                         </div>
                        
