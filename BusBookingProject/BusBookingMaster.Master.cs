@@ -13,7 +13,8 @@ namespace TravelBookingProject
         {
             if(Session["FName"] !=null)
             {
-                lblName.Text = Convert.ToString(Session["FName"]);
+                string cookie = Request.Cookies["log_status"].Value;
+                lblName.Text = Convert.ToString(Session["FName"]+cookie);
             }
             Session.Timeout = 1;
           

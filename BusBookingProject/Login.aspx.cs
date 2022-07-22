@@ -42,25 +42,14 @@ namespace TravelBookingProject
         {
             DataSet dsLogin = getUserData();
             if(dsLogin.Tables[0].Rows.Count>0)
-            {
+            {   //set session data
                 Session["UserID"] = Convert.ToInt32(dsLogin.Tables[0].Rows[0]["regId"]);
                 Session["FName"] = Convert.ToString(dsLogin.Tables[0].Rows[0]["Fname"]);
                 Session["MobileNo"] = Convert.ToString(dsLogin.Tables[0].Rows[0]["Contact"]);
-                //HttpCookie cookie = new HttpCookie("myCookie");
-                //cookie["userID"] = txtUserId.Text;
-                //cookie["userPass"] = txtPassword.Text;
-                //cookie.Expires = DateTime.Now.AddSeconds(30);
-                //Response.Cookies.Add(cookie);
-                if (Request.QueryString["BusID"]!=null)
-                {
-                    Response.Redirect("PassengerDetailsInfo.aspx?BusID=" + Request.QueryString["BusID"] + "&SeatNo=" + Request.QueryString["SeatNo"] + "&TravelDate=" + Request.QueryString["TravelDate"] +
-                  "&Origin=" + Request.QueryString["Origin"] + "&Destination=" + Request.QueryString["Destination"] + "&BoardingID=" + Request.QueryString["BoardingID"] + "&Fare=" + Request.QueryString["Fare"]);
-                }
-                else
-                {
-                    Response.Redirect("UserBooking.aspx");
-                }
-                
+                //set cookies
+                Response.Cookies["log_status"].Value = "logged-in";
+                Response.Redirect("UserBooking.aspx");
+
             }
             else
             {
