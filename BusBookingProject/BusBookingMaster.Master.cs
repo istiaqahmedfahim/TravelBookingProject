@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace BusBookingProject
+namespace TravelBookingProject
 {
     public partial class BusBookingMaster : System.Web.UI.MasterPage
     {
@@ -15,6 +15,7 @@ namespace BusBookingProject
             {
                 lblName.Text = Convert.ToString(Session["FName"]);
             }
+            Session.Timeout = 1;
           
         }
 

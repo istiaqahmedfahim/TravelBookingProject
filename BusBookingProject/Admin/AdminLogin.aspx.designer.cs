@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BusBookingProject.Admin {
+namespace TravelBookingProject.Admin {
     
     
     public partial class AdminLogin {

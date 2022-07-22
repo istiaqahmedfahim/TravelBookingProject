@@ -1,10 +1,10 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BusBookingMaster.master.cs" Inherits="BusBookingProject.BusBookingMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BusBookingMaster.master.cs" Inherits="TravelBookingProject.BusBookingMaster" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>On Line Bus Booking</title>
+    <title>On Line Travel Booking</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 <%--    <link href="css/style.css" rel="stylesheet" />--%>
 

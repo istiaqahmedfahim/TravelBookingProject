@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace BusBookingProject
+namespace TravelBookingProject
 {
     public partial class Login : System.Web.UI.Page
     {
@@ -46,7 +46,12 @@ namespace BusBookingProject
                 Session["UserID"] = Convert.ToInt32(dsLogin.Tables[0].Rows[0]["regId"]);
                 Session["FName"] = Convert.ToString(dsLogin.Tables[0].Rows[0]["Fname"]);
                 Session["MobileNo"] = Convert.ToString(dsLogin.Tables[0].Rows[0]["Contact"]);
-                if(Request.QueryString["BusID"]!=null)
+                //HttpCookie cookie = new HttpCookie("myCookie");
+                //cookie["userID"] = txtUserId.Text;
+                //cookie["userPass"] = txtPassword.Text;
+                //cookie.Expires = DateTime.Now.AddSeconds(30);
+                //Response.Cookies.Add(cookie);
+                if (Request.QueryString["BusID"]!=null)
                 {
                     Response.Redirect("PassengerDetailsInfo.aspx?BusID=" + Request.QueryString["BusID"] + "&SeatNo=" + Request.QueryString["SeatNo"] + "&TravelDate=" + Request.QueryString["TravelDate"] +
                   "&Origin=" + Request.QueryString["Origin"] + "&Destination=" + Request.QueryString["Destination"] + "&BoardingID=" + Request.QueryString["BoardingID"] + "&Fare=" + Request.QueryString["Fare"]);

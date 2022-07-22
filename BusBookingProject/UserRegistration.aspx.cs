@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace BusBookingProject
+namespace TravelBookingProject
 {
     public partial class UserRegistration : System.Web.UI.Page
     {
