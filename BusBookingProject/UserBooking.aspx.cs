@@ -18,7 +18,7 @@ namespace TravelBookingProject
         protected void Page_Load(object sender, EventArgs e)
         {
             Session.Timeout = 1;
-  }
+        }
 
         private int Booking()
         {

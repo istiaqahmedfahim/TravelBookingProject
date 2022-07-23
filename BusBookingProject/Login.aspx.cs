@@ -17,7 +17,15 @@ namespace TravelBookingProject
         #endregion
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            if (!IsPostBack)
+            {
+                if (Request.Cookies["UserName"] != null && Request.Cookies["Password"] != null)
+                {
+                    txtUserId.Text = Request.Cookies["UserName"].Value;
+                    txtPassword.Attributes["value"] = Request.Cookies["Password"].Value;
+                }
+            }
+
         }
 
         private DataSet getUserData()
@@ -47,7 +55,21 @@ namespace TravelBookingProject
                 Session["FName"] = Convert.ToString(dsLogin.Tables[0].Rows[0]["Fname"]);
                 Session["MobileNo"] = Convert.ToString(dsLogin.Tables[0].Rows[0]["Contact"]);
                 //set cookies
-                Response.Cookies["log_status"].Value = "logged-in";
+               Response.Cookies["log_status"].Value = " logged-in";
+                if (RememberMe.Checked)
+                {
+                    Response.Cookies["UserName"].Value = txtUserId.Text;
+                    Response.Cookies["Password"].Value = txtPassword.Text;
+                    Response.Cookies["UserName"].Expires = DateTime.Now.AddMinutes(1);
+                    Response.Cookies["Password"].Expires = DateTime.Now.AddMinutes(1);
+                }
+                else
+                {
+                    Response.Cookies["UserName"].Expires = DateTime.Now.AddMinutes(-1);
+                    Response.Cookies["Password"].Expires = DateTime.Now.AddMinutes(-1);
+                }
+
+
                 Response.Redirect("UserBooking.aspx");
 
             }
